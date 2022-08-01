@@ -1,0 +1,73 @@
+:root {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10xp;
+  margin: 0 20px 0 20px;
+}
+
+.scorBord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.scorBord > h2 {
+  font-size: 2rem;
+}
+.scorBord > p {
+  font-size: 2rem;
+  background-color: crimson;
+  padding: 10px 20px;
+}
+
+.selectxo {
+  padding: 20px;
+}
+.selectxo > button {
+  padding: 1px 20px;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.gamebord {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(3, 180px);
+  gap: 20px;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
