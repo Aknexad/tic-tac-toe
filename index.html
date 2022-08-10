@@ -21,23 +21,29 @@
           <p>0</p>
         </div>
         <div class="selectxo">
-          <button>X</button>
-          <button>O</button>
+          <button class="btn btn-select" data-select-type>
+            X
+          </button>
+          <button class="btn" data-select-type>O</button>
         </div>
       </div>
-      <div class="main">
-        <div class="gamebord">
-          <div class="box">1</div>
-          <div class="box">2</div>
-          <div class="box">3</div>
-          <div class="box">4</div>
-          <div class="box">5</div>
-          <div class="box">6</div>
-          <div class="box">7</div>
-          <div class="box">8</div>
-          <div class="box">9</div>
-        </div>
+      <div class="gamebord">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
       </div>
+    </div>
+    <div class="winning-message" id="winningMassge">
+      <div
+        class="winnig-massage-text"
+        id="winningText"
+      ></div>
     </div>
   </body>
 </html>
