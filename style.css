@@ -24,10 +24,11 @@ body {
 
 .info {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   padding: 10xp;
   margin: 0 20px 0 20px;
+  gap: 50px;
 }
 
 .scorBord {
@@ -61,6 +62,19 @@ body {
 .btn-select {
   background-color: white;
   color: black;
+}
+
+.restart {
+  font-size: 2rem;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.restart:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
 }
 
 .gamebord {
@@ -126,3 +140,62 @@ body {
   color: white;
   font-size: 5rem;
 }
+/* 
+.cell.x,
+.cell.cell.o {
+  cursor: not-allowed;
+}
+
+.cell.x::before,
+.cell.x::after,
+.cell.o::before {
+  background-color: white;
+}
+
+.board.x .cell:not(.x):not(.o):hover::after,
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.o .cell:not(.x):not(.o):hover::before {
+  background-color: lightgray;
+}
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.x .cell:not(.x):not(.o):hover::after {
+  content: '';
+  width: calc(var(--mark-size) * 0.15);
+  height: var(--mark-size);
+
+  position: absolute;
+}
+
+.cell.cell.x::before,
+.board.x .cell:not(.x):not(.o):hover::before {
+  transform: rotate(45deg);
+}
+
+.cell.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::after {
+  transform: rotate(-45deg);
+}
+
+.cell.o::before,
+.cell.o::after,
+.board.o .cell:not(.x):not(.o):hover::after,
+.board.o .cell:not(.x):not(.o):hover::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cell.o::before,
+.board.o .cell:not(.x):not(.o):hover::before {
+  width: var(--mark-size);
+  height: var(--mark-size);
+}
+.cell.o::after,
+.board.o .cell:not(.x):not(.o):hover::after {
+  width: calc(var(--mark-size) * 0.7);
+  height: calc(var(--mark-size) * 0.7);
+  background-color: black;
+} */
