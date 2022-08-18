@@ -34,8 +34,8 @@ function handelCellClick(e) {
   const board = GameBoard.board;
   board[idCell] = 'X';
   computer();
-
   renderBoard();
+  chackForWin();
 }
 
 function renderBoard() {
@@ -64,5 +64,43 @@ function findeEmptyIndex() {
     if (element === '') {
       indexs.push(i);
     }
+  }
+}
+
+function chackForWin() {
+  let win;
+  for (let i = 0; i < 7; i++) {
+    const winCondition = GameBoard.winningCombinations[i];
+    let a = GameBoard.board[winCondition[0]];
+    let b = GameBoard.board[winCondition[1]];
+    let c = GameBoard.board[winCondition[2]];
+    if (a === '' || b === '' || c === '') {
+      continue;
+    }
+    if (
+      a === b &&
+      b === c &&
+      b === 'X' &&
+      a === 'X' &&
+      c === 'X'
+    ) {
+      win = 'x';
+      break;
+    }
+    if (
+      a === b &&
+      b === c &&
+      b === 'O' &&
+      a === 'O' &&
+      c === 'O'
+    ) {
+      win = 'o';
+    }
+  }
+  if (win == 'x') {
+    console.log(`${win} is winner`);
+  }
+  if (win === 'o') {
+    console.log(`${win} is winner`);
   }
 }
