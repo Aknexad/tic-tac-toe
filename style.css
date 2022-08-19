@@ -140,6 +140,11 @@ body {
   color: white;
   font-size: 5rem;
 }
+
+.winning-message.show {
+  display: flex;
+}
+
 /* 
 .cell.x,
 .cell.cell.o {
