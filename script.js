@@ -158,6 +158,18 @@ function chackForWin() {
     clearBoard();
     GameBoard.DomFunction.removeEventListener();
   }
+  if (GameBoard.indexs.length === 0) {
+    win = 'draw';
+    const winmassage =
+      document.querySelector('#winningText');
+    winmassage.innerText = ` Is A Draw `;
+    document
+      .querySelector('#winningMassge')
+      .classList.add('show');
+    GameBoard.DomFunction.timeoutForMassage();
+    clearBoard();
+    GameBoard.DomFunction.removeEventListener();
+  }
 }
 
 function scoreBoard(win) {
