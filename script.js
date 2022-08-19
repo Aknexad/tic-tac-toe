@@ -33,7 +33,7 @@ const GameBoard = {
         document
           .querySelector('#winningMassge')
           .classList.remove('show');
-      }, 1000);
+      }, 1500);
     },
     removeEventListener: () => {
       cell.forEach((element) => {
@@ -158,6 +158,7 @@ function chackForWin() {
     clearBoard();
     GameBoard.DomFunction.removeEventListener();
   }
+
   if (GameBoard.indexs.length === 0) {
     win = 'draw';
     const winmassage =
